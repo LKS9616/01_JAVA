@@ -51,7 +51,7 @@ public class Application1 {
         System.out.println();
 
         for (int j = 0; j < arr2.length; j++) {
-            for (int i = 0l i < arr2[j].length; i++){
+            for (int i = 0; i < arr2[j].length; i++){
                 System.out.print(arr2[j][i] + " ");
             }
             System.out.println();

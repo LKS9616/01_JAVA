@@ -70,5 +70,6 @@ public class Application3 {
             System.out.print(iarr[i] + " ");
         }
         System.out.println();
+
     }
 }

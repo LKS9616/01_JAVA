@@ -77,9 +77,9 @@ public class Application2 {
         System.out.println("변경된 darr의 길이 : " + darr.length);
 
         //한번 찾아갈 수 있는 주소값을 잃어버린 배열은 다시 참조가 불가능하다.
-        darr = null;
+        // darr = null;
 
-        System.out.println("삭제 후 darr의 길이 : " + darr.length);
+        // System.out.println("삭제 후 darr의 길이 : " + darr.length);
 
 
     }

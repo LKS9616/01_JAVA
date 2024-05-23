@@ -19,7 +19,7 @@ public class Monster {
     // 몬스터의 이름과 체력을 String 값으로 return해주는 기능
     public String getInfo() {
 
-        String text = "몬스터의 이름은 " + this.name + "이고, 체력은 " + this.hp + "입니다.";
+        String text = "몬스터의 이름은 " + this.kinds + "이고, 체력은 " + this.hp + "입니다.";
         return text;
     }
 }

@@ -1,4 +1,4 @@
-package com.ohgiraffers.section3.abstraction;
+package com.ohgiraffers.excercise.instance;
 
 public class QuizApp {
     public static void main(String[] args) {

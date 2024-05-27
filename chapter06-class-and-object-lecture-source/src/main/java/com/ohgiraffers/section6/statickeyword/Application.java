@@ -14,5 +14,42 @@ public class Application {
         * 명확한 목적이 존재하지 않는 이상 static 키워드는 사용을 자제하는 것이 좋다.
         * 의도적으로 static 키우더를 사용하는 대표적인 예시는 singleton 객체를 만들 때
         * */
+
+        StaticFieldTest sft1 = new StaticFieldTest(); // 기본값
+
+        // 두 필드가 가지고 있는 값 확인
+        System.out.println("non-static field : " + sft1.getNonStaticCount()); // 0
+        System.out.println("static field : " + sft1.getStaticCount()); // 0
+
+        // 필드값 1씩 증가
+        sft1.increaseNonStaticCount();
+        sft1.increaseStaticCount();
+
+        System.out.println("non-static field : " + sft1.getNonStaticCount()); // 1
+        System.out.println("static field : " + sft1.getStaticCount()); // 1
+
+        StaticFieldTest sft2 = new StaticFieldTest();
+        System.out.println("non-static field : " + sft2.getNonStaticCount()); // 0
+        System.out.println("static field : " + sft2.getStaticCount()); // 1
+
+        /*
+        * 인스턴스 변수의 경우 sft1과 sft2 두 개의 인스턴스가 서로 값을 공유하지 못하고 인스턴스를 생성할 때마다 기본값인 0으로 초기화가 되었다.
+        * 하지만 static 필드의 경우 클래스변수(static 붙은) 가 프로그램 종료될 때까지 유지되고 있기 때문에 값을 유지하고 있다.
+        * 따라서 여러 개의 인스턴스가 같은 공간을 공유할 목적으로 필드에 static 키워드를 사용한다.
+        * */
+
+        // static 메서드 확인
+        StaticMethodTest smt = new StaticMethodTest();
+        smt.nonStaticMethod();
+
+        /*
+        * static Method 호출
+        *
+        * [클래스명].[메소드명]
+        * */
+
+        smt.staticMethod(); // 권장되지 않음
+        StaticMethodTest.staticMethod(); // 권장됨
+
     }
 }

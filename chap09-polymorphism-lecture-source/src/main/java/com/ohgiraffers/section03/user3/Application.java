@@ -1,12 +1,12 @@
 package com.ohgiraffers.section03.user3;
 
 public class Application {
-    public void main(String[] args) {
+    public static void main(String[] args) {
 
-        Dice dice = new HellDice(); // SuperDice로 변경해도 작동되게
+        Dice dice = new SuperDice(); // SuperDice로 변경해도 작동되게
 
         Dicer dicer = new Dicer();
 
-        dicer throwDice(dice);
+        dicer.throwDice(dice);
     }
 }

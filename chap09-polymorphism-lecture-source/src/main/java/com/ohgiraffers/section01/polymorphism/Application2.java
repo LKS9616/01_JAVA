@@ -22,7 +22,7 @@ public class Application2 {
         for (int i = 0; i < animals.length; i++){
             if(animals[i] instanceof Rabbit) {
                 ((Rabbit)animals[i]).jump();
-            } else if(animals[i]) instanceof Tiger){
+            } else if((animals[i]) instanceof Tiger){
                 ((Tiger) animals[i]).bite();
             } else {
                 System.out.println("호랑이나 토끼가 아닙니다.");

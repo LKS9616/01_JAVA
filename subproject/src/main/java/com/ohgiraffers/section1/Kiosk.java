@@ -59,9 +59,11 @@ public class Kiosk {
         Coffee[] coffees = barista.makeCoffee(order);
 
         // Arrays : 배열에 관련된 기능을 미리 만들어놓은 패키지
-        // tostring :
+        // tostring : 객체 안에 있는 값을 꺼내서 보여줌
+        if (coffees != null) {
 
-        System.out.println("> 주문하신 커피" + Arrays.toString(coffees));
+            System.out.println("> 주문하신 커피" + Arrays.toString(coffees));
+        }
     }
 
     private Order createOrder(String menuName) {

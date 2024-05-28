@@ -1,6 +1,6 @@
 package com.ohgiraffers.section02.uses;
 
-public class Member {
+public class neuw {
 
     private int num;
     private String id;
@@ -9,7 +9,7 @@ public class Member {
     private int age;
     private char gender;
 
-    public Member(int num, String id, String pwd, String name, int age, char gender) {
+    public neuw(int num, String id, String pwd, String name, int age, char gender) {
         this.num = num;
         this.id = id;
         this.pwd = pwd;
@@ -64,13 +64,5 @@ public class Member {
 
     public void setGender(char gender) {
         this.gender = gender;
-    }
-
-
-    // 필드값 조회용 메서드
-    public String getInformation() {
-        return "Member [num = " + num + ", id = " + id +
-                ", pwd = " + pwd + ", name = " + name + ", age = " + age +
-                ", gender = " + gender + "]";
     }
 }

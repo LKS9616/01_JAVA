@@ -10,11 +10,12 @@ public class LazySingleton {
 
     public static LazySingleton getInstance() {
         /*
-        * 인스턴스를 생선한 적이 없응 경우 인스턴스를 생성해서 반환하고 생성한 인스턴스가 있는 경우 만들어놓은 인스턴스를 방출한다.
-        * */
+         * 인스턴스를 생선한 적이 없응 경우 인스턴스를 생성해서 반환하고 생성한 인스턴스가 있는 경우 만들어놓은 인스턴스를 방출한다.
+         * */
         if (lazy == null) {
             lazy = new LazySingleton();
         }
-
+        return lazy;
     }
-}
+    }
+

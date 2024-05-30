@@ -41,7 +41,7 @@ public class Application4 {
         String[] sarr = str.split("");
 
         for(String s : sarr) {
-            System.out.println(s);
+            System.out.print(s);
     }
 }
 }

@@ -6,4 +6,5 @@ public class PriceNegativeException extends NegativeException{
         super(message);
     }
 
+
 }

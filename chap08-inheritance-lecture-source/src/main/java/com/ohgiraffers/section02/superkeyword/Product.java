@@ -1,6 +1,7 @@
 package com.ohgiraffers.section02.superkeyword;
 
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 public class Product {
 
@@ -24,6 +25,8 @@ public class Product {
         this.name = name;
         this.price = price;
         this.manufacturingDate = manufacturingDate;
+
+
 
         System.out.println("Product 클래스의 매개변수 있는 생성자 호출함...");
     }

@@ -1,5 +1,9 @@
 package com.ohgiraffers.section02.superkeyword;
 
+import java.awt.*;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
 public class Application {
 
     public static void main(String[] args) {
@@ -40,6 +44,17 @@ public class Application {
                 "퀄컴 스냅드래곤", 512, 12, "안드로이드");
 
         System.out.println(computer3.getInformation());
+
+        GregorianCalendar gregory = new GregorianCalendar();
+        System.out.println("gregory = " + gregory);
+        int nYear = gregory.get(Calendar.YEAR);
+        int nMonth = gregory.get(Calendar.MONTH)+1;
+        int nDay = gregory.get(Calendar.DAY_OF_MONTH);
+        System.out.println("Gregorian Calendar = " + nYear+nMonth+nDay);
+        int Year = gregory.get(Calendar.YEAR);
+        int Month = gregory.get(Calendar.MONTH);
+        int Day = gregory.get(Calendar.DAY_OF_MONTH);
+        System.out.println("오늘의 날짜는 " + Year + "년 " + Month + "월 " + Day + "일입니다.");
 
     }
 }
